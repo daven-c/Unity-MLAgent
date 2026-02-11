@@ -1,0 +1,24 @@
+behaviors:
+    RollerBall:
+        trainer_type: ppo # Training algorithm (PPO = Proximal Policy Optimization)
+        hyperparameters:
+            batch_size: 1024 # How many "experiences" to learn from at once (Default is 1024, smaller is faster for simple games)
+            buffer_size: 2048 # How many experiences to collect before updating the brain
+            learning_rate: 0.005 # How fast to learn (too high = chaotic, too low = slow)
+            beta: 0.005 # Curiosity (higher = explores more random stuff)
+            epsilon: 0.2 # Clipping range for policy updates
+            lambd: 0.95 # Generalized Advantage Estimation (GAE) lambda parameter
+            num_epoch: 3 # Number of passes through the buffer per update
+            learning_rate_schedule: linear # How learning rate changes over time
+        network_settings:
+            normalize: true # Normalize input observations
+            hidden_units: 128 # Brain size (Neurons per layer)
+            num_layers: 2 # How deep the brain is
+        reward_signals:
+            extrinsic:
+                gamma: 0.99 # Discount factor for future rewards
+                strength: 1.0 # Weight of extrinsic rewards
+        max_steps: 500000 # Stop training after this many steps
+        time_horizon: 64 # How far into the future to predict rewards
+        summary_freq: 10000 # How often to print stats to terminal
+

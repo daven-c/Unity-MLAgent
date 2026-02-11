@@ -205,3 +205,33 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Unity Folders (Relative to Unity-MLAgent root) ---
+MLAgents/[Ll]ibrary/
+MLAgents/[Tt]emp/
+MLAgents/[Oo]bj/
+MLAgents/[Bb]uild/
+MLAgents/[Bb]uilds/
+MLAgents/[Ll]ogs/
+MLAgents/[Mm]emoryCaptures/
+MLAgents/[Aa]ssets/_Recovery/
+MLAgents/[Aa]ssets/ML-Agents/Timers/
+
+# --- Nested Python Environment (Inside MLAgents/Assets/Python) ---
+MLAgents/[Aa]ssets/Python/.venv/
+MLAgents/[Aa]ssets/Python/results/
+MLAgents/[Aa]ssets/Python/__pycache__/
+MLAgents/[Aa]ssets/Python/*.py[cod]
+
+# --- Unity Generated Project Files ---
+# (These usually appear in the same folder as the .sln file)
+*.csproj
+*.unitypackage
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svntmp
+.DS_Store
