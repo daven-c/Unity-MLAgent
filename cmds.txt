@@ -1,0 +1,2 @@
+mlagents-learn config.yaml --run-id=RollerBall_Train1 --force --time-scale=1
+tensorboard --logdir results
