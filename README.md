@@ -1,10 +1,8 @@
-Here is a professional `README.md` for your project. You can copy-paste this directly into your GitHub repository or project folder.
+# Unity ML-Agents: RollerBall
 
----
+A reinforcement learning sandbox built with **Unity 6** and **ML-Agents**. A blue cube (the agent) learns to roll across a plane and reach a randomly spawning red sphere (the target) using **PPO (Proximal Policy Optimization)** — from random flailing to consistent target-seeking in a few thousand training steps.
 
-# Unity ML-Agents: RollerBall 🤖📦
-
-A reinforcement learning simulation built with **Unity 6** and **ML-Agents**. This project demonstrates a simple AI agent (a blue cube) learning to navigate a plane to collect a randomly spawning target (a red sphere) using the **PPO (Proximal Policy Optimization)** algorithm.
+The repo is deliberately end-to-end: manual (heuristic) mode, parallel training with a tuned `config.yaml`, and inference from an exported `.onnx` — plus notes on the Apple-Silicon-specific dependency dance that trips most people up.
 
 ## 📋 Prerequisites
 
